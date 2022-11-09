@@ -1,111 +1,189 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: sans-serif;
 }
+
+// .header {
+//     display: flex;
+//     // justify-content: space-between;
+//     height: 10vh;
+//     width: 100%;
+//     background-color: black;
+//     color: white;
+// }
+
 
 .header {
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
     height: 10vh;
     background-color: black;
     color: white;
 
-}
-
-.leftheader {
-    background-color: green;
-    padding: 10px;
-    width: 150px;
-    text-align: center;
-}
-
-.rightheader {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    text-align: center;
-
     a {
+        display:flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
         padding: 10px;
         color: white;
-        width: 100px;
         text-decoration: none;
+        align-items: center;
+        flex: 1;
     }
 
     a:hover {
         background-color: green;
         color: black;
+        width: 100%;
         text-decoration: none;
+        align-items: center;
+        flex: 1;
+    }
+
+    h1 {
+        background-color: green;
+        padding: 10px;
+        width: 150px;
+        flex: 1;
+    }
+
+    span {
+        scale: 2;
+        margin-right: 5px;
     }
 }
 
-.container {
+.lowernav {
     display: flex;
     flex-direction: row;
-    flex-grow: 1;
-    flex-wrap:wrap;
+    justify-content: space-between;
+    height: 7vh;
+    align-items: center;
+
+    .leftnav {
+        display: flex;
+        flex: 1;
+        text-align: center;
+        align-items: center;
+
+        span {
+            margin-right: 28vw;
+        }
+        label {
+            margin-right: 10px;
+        }
+
+        input {
+            height: 25px;
+            width: 200px;
+            border: 2px solid black;
+            border-radius: 5px;
+        }
+    }
     
-    width: 100%;
+    .rightnav {
+        display: flex;
+        justify-content: center;
+        flex: 1;
+    }
+}
+
+
+
+.container {
+    max-width: 100vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-top: 5px;
+    border: 5px solid black;
+    border-radius: 5px;   
+}
+
+.row {
+    display: flex;
+    gap: 5px;
+}
+
+.column {
+    padding: 1rem 0;
+    text-align: center;
+    flex: 1;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-bottom: 5px;
+
+    img {
+        max-width: 75%;
+        height: auto;
+    }
 }
 
 .container2 {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    align-items: stretch;
+    // height: 100vh;
     width: 100%;
     
 }
 
-.leftcontainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    flex: 1;
-    max-height: 90vh;
-    width: 66%;
+// .leftcontainer {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: space-between;
+//     flex: 1;
+//     max-height: 90vh;
+//     width: 66%;
 
-    div {
-        border: 5px solid black;
-        margin: 10px;
-        // remove flex-grow for challenge 2, set height to 33% and align items to center
-        flex: 1;
-        // height: 33%;
-        // align-items: center;
+//     div {
+//         border: 5px solid black;
+//         margin: 10px;
+//         // remove flex-grow for challenge 2, set height to 33% and align items to center
+//         flex: 1;
+//         // height: 33%;
+//         // align-items: center;
 
-        h1 {
-            // padding: 10px;
-            margin-left: 10px;
-        }
-        ul {
-            margin-left: 40px;
-            padding: 10px;
-        }
-        ul li {
-            padding: 10px;
-            font-weight: bold;
-        }
-    }
-}
+//         h1 {
+//             // padding: 10px;
+//             margin-left: 10px;
+//         }
+//         ul {
+//             margin-left: 40px;
+//             padding: 10px;
+//         }
+//         ul li {
+//             padding: 10px;
+//             font-weight: bold;
+//         }
+//     }
+// }
 
-.rightcontainer {
-    display: flex;
+// .rightcontainer {
+//     display: flex;
     
-    width: 33%;
+//     width: 33%;
 
-    div {
-        border: 5px solid black;
-        margin: 10px;
-        flex-shrink: 1;
+//     div {
+//         border: 5px solid black;
+//         margin: 10px;
+//         flex-shrink: 1;
 
-        h1,p {
-            margin: 10px;
-        }
+//         h1,p {
+//             margin: 10px;
+//         }
+//     }
+// }
+
+@media only screen and (max-width:768px) {
+    .row {
+        flex-wrap: wrap;
     }
-}
 
-.blackbox {
-    background-color: black;
-    color: white;
-    height: 50px;
-    width: 50px;
+    .column {
+        flex-basis: 100%;
+    }
 }
