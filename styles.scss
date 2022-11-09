@@ -46,7 +46,10 @@
     div {
         border: 5px solid black;
         margin: 10px;
-        flex-grow: 1;
+        // remove flex-grow for challenge 2, set height to 33% and align items to center
+        // flex-grow: 1;
+        height: 33%;
+        align-items: center;
 
         h1 {
             // padding: 10px;
@@ -77,4 +80,11 @@
             margin: 10px;
         }
     }
+}
+
+.blackbox {
+    background-color: black;
+    color: white;
+    height: 50px;
+    width: 50px;
 }

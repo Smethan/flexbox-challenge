@@ -43,7 +43,8 @@
 .leftcontainer div {
   border: 5px solid black;
   margin: 10px;
-  flex-grow: 1;
+  height: 33%;
+  align-items: center;
 }
 .leftcontainer div h1 {
   margin: 10px;
@@ -68,4 +69,11 @@
 }
 .rightcontainer div h1, .rightcontainer div p {
   margin: 10px;
+}
+
+.blackbox {
+  background-color: black;
+  color: white;
+  height: 50px;
+  width: 50px;
 }/*# sourceMappingURL=styles.css.map */
