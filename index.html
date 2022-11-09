@@ -22,14 +22,19 @@
         </div>
         <div class="lowernav">
             <div class="leftnav">
-                <span class="material-symbols-outlined">
+                <a href=""><span class="material-symbols-outlined">
                     filter_alt
-                </span>
+                </span></a>
                 <label>Search:</label>
                 <input type="text" placeholder="search"/>
             </div>
             <div class="rightnav">
-                <p>choose an option or die</p>
+                <label for="sort">Sort by:</label>
+                <select name="sort" id="sort">
+                    <option value="name">Name</option>
+                    <option value="date">Date</option>
+                    <option value="size">Size</option>
+                </select>
             </div>
         </div>
         <div class="container">
