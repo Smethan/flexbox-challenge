@@ -6,7 +6,7 @@
 .header {
   display: flex;
   justify-content: space-between;
-  height: 50px;
+  height: 10vh;
   background-color: black;
   color: white;
 }
@@ -39,7 +39,14 @@
 .container {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.container2 {
+  display: flex;
+  flex-direction: column;
   height: 100vh;
   width: 100%;
 }
@@ -47,16 +54,18 @@
 .leftcontainer {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
+  flex: 1;
+  max-height: 90vh;
   width: 66%;
 }
 .leftcontainer div {
   border: 5px solid black;
   margin: 10px;
-  flex-grow: 1;
+  flex: 1;
 }
 .leftcontainer div h1 {
-  margin: 10px;
+  margin-left: 10px;
 }
 .leftcontainer div ul {
   margin-left: 40px;
